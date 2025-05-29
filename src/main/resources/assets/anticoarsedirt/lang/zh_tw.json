@@ -1,0 +1,36 @@
+{
+  "anticoarsedirt.command.help.title": "§6=== AntiCoarseDirt 指令列表 ===§r",
+  "anticoarsedirt.command.help.status": "§7/anticoarsedirt§r - 顯示目前狀態",
+  "anticoarsedirt.command.help.help": "§7/anticoarsedirt help§r - 顯示此說明訊息",
+  "anticoarsedirt.command.help.on": "§7/anticoarsedirt on§r - 啟用模組",
+  "anticoarsedirt.command.help.off": "§7/anticoarsedirt off§r - 停用模組",
+  "anticoarsedirt.command.help.toggle": "§7/anticoarsedirt true/false§r - 啟用/停用模組",
+  "anticoarsedirt.command.help.setblock": "§7/anticoarsedirt setblock <方塊>§r - 設定目標方塊",
+  "anticoarsedirt.command.help.examples": "§8  範例: dirt, stone, oak_planks, acacia_wood§r",
+  "anticoarsedirt.command.help.setrange": "§7/anticoarsedirt setrange <1-6>§r - 設定轉換半徑",
+  "anticoarsedirt.command.help.status_cmd": "§7/anticoarsedirt status§r - 顯示目前設定",
+  
+  "anticoarsedirt.command.enabled": "AntiCoarseDirt 已§a啟用§r",
+  "anticoarsedirt.command.disabled": "AntiCoarseDirt 已§c停用§r",
+  
+  "anticoarsedirt.command.block.not_found": "§c找不到方塊: §f%s",
+  "anticoarsedirt.command.block.unsupported": "§c不支援的方塊: §f%s\n§7請使用實心方塊（不要使用按鈕、門等）",
+  "anticoarsedirt.command.block.set": "§a目標方塊已設定為: §f%s",
+  
+  "anticoarsedirt.command.radius.set": "§a半徑已設定為: §f%s",
+  
+  "anticoarsedirt.command.status.title": "§6=== AntiCoarseDirt 狀態 ===§r",
+  "anticoarsedirt.command.status.enabled": "§7啟用狀態: %s§r",
+  "anticoarsedirt.command.status.enabled_yes": "§a是",
+  "anticoarsedirt.command.status.enabled_no": "§c否",
+  "anticoarsedirt.command.status.radius": "§7半徑: §f%s§r",
+  "anticoarsedirt.command.status.target_block": "§7目標方塊: §f%s§r",
+  "anticoarsedirt.command.status.help_hint": "§8使用 §7/anticoarsedirt help§8 檢視指令列表",
+  
+  "anticoarsedirt.config.title": "Anti Coarse Dirt 設定",
+  "anticoarsedirt.config.general": "一般設定",
+  "anticoarsedirt.config.enabled": "啟用",
+  "anticoarsedirt.config.radius": "半徑",
+  "anticoarsedirt.config.target_block": "目標方塊",
+  "anticoarsedirt.config.target_block.tooltip": "用於替換砂土的方塊\n範例: minecraft:dirt, minecraft:grass_block, minecraft:stone"
+} 

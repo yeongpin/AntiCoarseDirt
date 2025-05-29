@@ -1,3 +1,7 @@
+
+## 1.3
+- Added Locale - en , zh-tw , zh-cn
+
 ## 1.2
 - Added command to toggle and set the target block and radius
 - Added command to show the current status

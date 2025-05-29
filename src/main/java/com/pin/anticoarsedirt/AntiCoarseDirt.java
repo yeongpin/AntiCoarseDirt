@@ -52,23 +52,27 @@ public class AntiCoarseDirt {
     private Screen createConfigScreen(Screen parent) {
         ConfigBuilder builder = ConfigBuilder.create()
             .setParentScreen(parent)
-            .setTitle(Component.literal("Anti Coarse Dirt Config"));
-        ConfigCategory general = builder.getOrCreateCategory(Component.literal("General Settings"));
+            .setTitle(Component.translatable("anticoarsedirt.config.title"));
+        ConfigCategory general = builder.getOrCreateCategory(
+            Component.translatable("anticoarsedirt.config.general"));
         ConfigEntryBuilder entryBuilder = builder.entryBuilder();
 
-        general.addEntry(entryBuilder.startBooleanToggle(Component.literal("Enabled"), Config.enabled.get())
+        general.addEntry(entryBuilder.startBooleanToggle(
+                Component.translatable("anticoarsedirt.config.enabled"), Config.enabled.get())
             .setDefaultValue(true)
             .setSaveConsumer(Config.enabled::set)
             .build());
 
-        general.addEntry(entryBuilder.startIntSlider(Component.literal("Radius"), Config.radius.get(), 1, 6)
+        general.addEntry(entryBuilder.startIntSlider(
+                Component.translatable("anticoarsedirt.config.radius"), Config.radius.get(), 1, 6)
             .setDefaultValue(1)
             .setSaveConsumer(Config.radius::set)
             .build());
 
-        general.addEntry(entryBuilder.startStrField(Component.literal("Target Block"), Config.targetBlock.get())
+        general.addEntry(entryBuilder.startStrField(
+                Component.translatable("anticoarsedirt.config.target_block"), Config.targetBlock.get())
             .setDefaultValue("minecraft:dirt")
-            .setTooltip(Component.literal("The block to replace coarse dirt with\nExamples: minecraft:dirt, minecraft:grass_block, minecraft:stone"))
+            .setTooltip(Component.translatable("anticoarsedirt.config.target_block.tooltip"))
             .setSaveConsumer(Config.targetBlock::set)
             .build());
 

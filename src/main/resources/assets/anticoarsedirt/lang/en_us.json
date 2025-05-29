@@ -1,0 +1,36 @@
+{
+  "anticoarsedirt.command.help.title": "§6=== AntiCoarseDirt Commands ===§r",
+  "anticoarsedirt.command.help.status": "§7/anticoarsedirt§r - Show current status",
+  "anticoarsedirt.command.help.help": "§7/anticoarsedirt help§r - Show this help message",
+  "anticoarsedirt.command.help.on": "§7/anticoarsedirt on§r - Enable the mod",
+  "anticoarsedirt.command.help.off": "§7/anticoarsedirt off§r - Disable the mod",
+  "anticoarsedirt.command.help.toggle": "§7/anticoarsedirt true/false§r - Enable/disable the mod",
+  "anticoarsedirt.command.help.setblock": "§7/anticoarsedirt setblock <block>§r - Set target block",
+  "anticoarsedirt.command.help.examples": "§8  Examples: dirt, stone, oak_planks, acacia_wood§r",
+  "anticoarsedirt.command.help.setrange": "§7/anticoarsedirt setrange <1-6>§r - Set conversion radius",
+  "anticoarsedirt.command.help.status_cmd": "§7/anticoarsedirt status§r - Show current settings",
+  
+  "anticoarsedirt.command.enabled": "AntiCoarseDirt has been §aenabled§r",
+  "anticoarsedirt.command.disabled": "AntiCoarseDirt has been §cdisabled§r",
+  
+  "anticoarsedirt.command.block.not_found": "§cBlock not found: §f%s",
+  "anticoarsedirt.command.block.unsupported": "§cUnsupported block: §f%s\n§7Use solid blocks only (no buttons, doors, etc.)",
+  "anticoarsedirt.command.block.set": "§aTarget block set to: §f%s",
+  
+  "anticoarsedirt.command.radius.set": "§aRadius set to: §f%s",
+  
+  "anticoarsedirt.command.status.title": "§6=== AntiCoarseDirt Status ===§r",
+  "anticoarsedirt.command.status.enabled": "§7Enabled: %s§r",
+  "anticoarsedirt.command.status.enabled_yes": "§aYes",
+  "anticoarsedirt.command.status.enabled_no": "§cNo",
+  "anticoarsedirt.command.status.radius": "§7Radius: §f%s§r",
+  "anticoarsedirt.command.status.target_block": "§7Target Block: §f%s§r",
+  "anticoarsedirt.command.status.help_hint": "§8Use §7/anticoarsedirt help§8 for command list",
+  
+  "anticoarsedirt.config.title": "Anti Coarse Dirt Config",
+  "anticoarsedirt.config.general": "General Settings",
+  "anticoarsedirt.config.enabled": "Enabled",
+  "anticoarsedirt.config.radius": "Radius",
+  "anticoarsedirt.config.target_block": "Target Block",
+  "anticoarsedirt.config.target_block.tooltip": "The block to replace coarse dirt with\nExamples: minecraft:dirt, minecraft:grass_block, minecraft:stone"
+} 

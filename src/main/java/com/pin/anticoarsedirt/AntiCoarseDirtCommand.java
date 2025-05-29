@@ -75,17 +75,7 @@ public class AntiCoarseDirtCommand {
     
     private static int showHelp(CommandContext<CommandSourceStack> context) {
         context.getSource().sendSuccess(() -> 
-            Component.literal("§6=== AntiCoarseDirt Commands ===§r\n" +
-                "§7/anticoarsedirt§r - Show current status\n" +
-                "§7/anticoarsedirt help§r - Show this help message\n" +
-                "§7/anticoarsedirt on§r - Enable the mod\n" +
-                "§7/anticoarsedirt off§r - Disable the mod\n" +
-                "§7/anticoarsedirt true/false§r - Enable/disable the mod\n" +
-                "§7/anticoarsedirt setblock <block>§r - Set target block\n" +
-                "§8  Examples: dirt, stone, oak_planks, acacia_wood§r\n" +
-                "§7/anticoarsedirt setrange <1-6>§r - Set conversion radius\n" +
-                "§7/anticoarsedirt status§r - Show current settings"), false);
-        
+            LocalizationHelper.createHelpMessage(context.getSource()), false);
         return 1;
     }
     
@@ -98,9 +88,9 @@ public class AntiCoarseDirtCommand {
         Config.enabled.set(enabled);
         Config.SPEC.save();
         
-        String status = enabled ? "§aenabled§r" : "§cdisabled§r";
+        String messageKey = enabled ? "anticoarsedirt.command.enabled" : "anticoarsedirt.command.disabled";
         context.getSource().sendSuccess(() -> 
-            Component.literal("AntiCoarseDirt has been " + status), true);
+            LocalizationHelper.translate(context.getSource(), messageKey), true);
         
         return 1;
     }
@@ -113,15 +103,16 @@ public class AntiCoarseDirtCommand {
         
         if (block == null || block == Blocks.AIR) {
             context.getSource().sendFailure(
-                Component.literal("§cBlock not found: §f" + resourceLocation));
+                LocalizationHelper.formatMessage(context.getSource(), 
+                    "anticoarsedirt.command.block.not_found", resourceLocation));
             return 0;
         }
         
         // Check if block is suitable for replacement
         if (!isSuitableBlock(block, resourceLocation)) {
             context.getSource().sendFailure(
-                Component.literal("§cUnsupported block: §f" + resourceLocation + 
-                "\n§7Use solid blocks only (no buttons, doors, etc.)"));
+                LocalizationHelper.formatMessage(context.getSource(),
+                    "anticoarsedirt.command.block.unsupported", resourceLocation));
             return 0;
         }
         
@@ -130,7 +121,8 @@ public class AntiCoarseDirtCommand {
         Config.SPEC.save();
         
         context.getSource().sendSuccess(() -> 
-            Component.literal("§aTarget block set to: §f" + finalBlockId), true);
+            LocalizationHelper.formatMessage(context.getSource(),
+                "anticoarsedirt.command.block.set", finalBlockId), true);
         
         return 1;
     }
@@ -167,7 +159,8 @@ public class AntiCoarseDirtCommand {
         Config.SPEC.save();
         
         context.getSource().sendSuccess(() -> 
-            Component.literal("§aRadius set to: §f" + radius), true);
+            LocalizationHelper.formatMessage(context.getSource(),
+                "anticoarsedirt.command.radius.set", radius), true);
         
         return 1;
     }
@@ -178,11 +171,7 @@ public class AntiCoarseDirtCommand {
         String targetBlock = Config.targetBlock.get();
         
         context.getSource().sendSuccess(() -> 
-            Component.literal("§6=== AntiCoarseDirt Status ===§r\n" +
-                "§7Enabled: " + (enabled ? "§aYes" : "§cNo") + "§r\n" +
-                "§7Radius: §f" + radius + "§r\n" +
-                "§7Target Block: §f" + targetBlock + "§r\n" +
-                "§8Use §7/anticoarsedirt help§8 for command list"), false);
+            LocalizationHelper.createStatusMessage(context.getSource(), enabled, radius, targetBlock), false);
         
         return 1;
     }
