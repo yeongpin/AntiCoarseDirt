@@ -7,7 +7,7 @@
   "anticoarsedirt.command.help.toggle": "§7/anticoarsedirt true/false§r - 啟用/停用模組",
   "anticoarsedirt.command.help.setblock": "§7/anticoarsedirt setblock <方塊>§r - 設定目標方塊",
   "anticoarsedirt.command.help.examples": "§8  範例: dirt, stone, oak_planks, acacia_wood§r",
-  "anticoarsedirt.command.help.setrange": "§7/anticoarsedirt setrange <1-6>§r - 設定轉換半徑",
+  "anticoarsedirt.command.help.setrange": "§7/anticoarsedirt setrange <1-16>§r - 設定轉換半徑",
   "anticoarsedirt.command.help.status_cmd": "§7/anticoarsedirt status§r - 顯示目前設定",
   
   "anticoarsedirt.command.enabled": "AntiCoarseDirt 已§a啟用§r",
@@ -20,6 +20,7 @@
   "anticoarsedirt.command.radius.set": "§a半徑已設定為: §f%s",
   
   "anticoarsedirt.command.status.title": "§6=== AntiCoarseDirt 狀態 ===§r",
+  "anticoarsedirt.command.status.author": "§7作者: §fyeongpin§r",
   "anticoarsedirt.command.status.enabled": "§7啟用狀態: %s§r",
   "anticoarsedirt.command.status.enabled_yes": "§a是",
   "anticoarsedirt.command.status.enabled_no": "§c否",

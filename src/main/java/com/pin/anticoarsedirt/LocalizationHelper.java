@@ -57,6 +57,7 @@ public class LocalizationHelper {
             Component.translatable("anticoarsedirt.command.status.enabled_no");
             
         return Component.translatable("anticoarsedirt.command.status.title")
+            .append("\n").append(Component.translatable("anticoarsedirt.command.status.author"))
             .append("\n").append(Component.translatable("anticoarsedirt.command.status.enabled", enabledText))
             .append("\n").append(Component.translatable("anticoarsedirt.command.status.radius", radius))
             .append("\n").append(Component.translatable("anticoarsedirt.command.status.target_block", targetBlock))

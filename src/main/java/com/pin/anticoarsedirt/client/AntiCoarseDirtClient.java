@@ -43,7 +43,7 @@ public class AntiCoarseDirtClient {
             .build());
 
         general.addEntry(entryBuilder.startIntSlider(
-                Component.translatable("anticoarsedirt.config.radius"), Config.radius.get(), 1, 6)
+                Component.translatable("anticoarsedirt.config.radius"), Config.radius.get(), 1, 16)
             .setDefaultValue(1)
             .setSaveConsumer(Config.radius::set)
             .build());

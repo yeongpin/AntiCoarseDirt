@@ -57,7 +57,7 @@ public class AntiCoarseDirtCommand {
             
             // Range setting command
             .then(Commands.literal("setrange")
-                .then(Commands.argument("radius", IntegerArgumentType.integer(1, 6))
+                .then(Commands.argument("radius", IntegerArgumentType.integer(1, 16))
                     .executes(context -> setRadius(context))))
             
             // Status command

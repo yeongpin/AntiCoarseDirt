@@ -7,7 +7,7 @@
   "anticoarsedirt.command.help.toggle": "§7/anticoarsedirt true/false§r - Enable/disable the mod",
   "anticoarsedirt.command.help.setblock": "§7/anticoarsedirt setblock <block>§r - Set target block",
   "anticoarsedirt.command.help.examples": "§8  Examples: dirt, stone, oak_planks, acacia_wood§r",
-  "anticoarsedirt.command.help.setrange": "§7/anticoarsedirt setrange <1-6>§r - Set conversion radius",
+  "anticoarsedirt.command.help.setrange": "§7/anticoarsedirt setrange <1-16>§r - Set conversion radius",
   "anticoarsedirt.command.help.status_cmd": "§7/anticoarsedirt status§r - Show current settings",
   
   "anticoarsedirt.command.enabled": "AntiCoarseDirt has been §aenabled§r",
@@ -20,6 +20,7 @@
   "anticoarsedirt.command.radius.set": "§aRadius set to: §f%s",
   
   "anticoarsedirt.command.status.title": "§6=== AntiCoarseDirt Status ===§r",
+  "anticoarsedirt.command.status.author": "§7Author: §fyeongpin§r",
   "anticoarsedirt.command.status.enabled": "§7Enabled: %s§r",
   "anticoarsedirt.command.status.enabled_yes": "§aYes",
   "anticoarsedirt.command.status.enabled_no": "§cNo",

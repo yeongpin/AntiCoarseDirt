@@ -1,3 +1,8 @@
+
+## 1.5
+- Support max radius to 16
+- Added author to status command
+
 ## 1.4
 - Fixed server startup crash caused by ClothConfig2 client-side dependency
 - Separated client and server code for better compatibility

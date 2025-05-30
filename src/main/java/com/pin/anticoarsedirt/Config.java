@@ -18,7 +18,7 @@ public class Config {
 
         radius = BUILDER
             .comment("Radius around the player to convert coarse dirt")
-            .defineInRange("radius", 1, 1, 6);
+            .defineInRange("radius", 1, 1, 16);
 
         targetBlock = BUILDER
             .comment("The block to replace coarse dirt with (use minecraft:block_name format)",
